@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body onload="loady()">
+    <div class="container-fluid mx-auto col-lg-7 col-10 shadow-sm mt-lg-5 mt-2 p-3">
+        <h1 class="text-center text-decoration-underline my-3">Mini Mart</h1>
+        <input type="text" class="form-control shadow-none form-control-sm bg-info" name="" id="inp" placeholder="Item">
+        <input type="text" class="form-control shadow-none form-control-sm" name="" id="inp1" placeholder="Amount">
+        <button class="w-100 btn btn-outline-danger my-2 btn-sm" onclick="addItems()">Submit</button>
+        <!-- <button class="w-100 btn btn-outline-dark my-2 btn-sm" onclick="addItem()">Add</button> -->
+    </div>
+
+    <div class="container-fluid mx-auto col-lg-7 col-10 my-4 shadow-sm p-3" id="show"></div>
+
+    <div class="container-fluid mx-auto col-lg-7 col-10 my-4 shadow-sm p-3">
+        <button onclick="addBegin()" class="btn btn-sm btn-primary mx-2 my-2">Add to beginning</button>
+        <button onclick="deleteFisrt()" class="btn btn-sm btn-secondary mx-2 my-2">Delete first</button>
+        <button onclick="deleteLast()" class="btn btn-sm btn-danger mx-2 my-2">Delete last</button>
+        <button onclick="deleteAny()" class="btn btn-sm btn-dark mx-2 my-2">Delete any</button>
+        <!-- <button onclick="Edit()" class="btn btn-sm btn-danger mx-2 my-2">Edit</button> -->
+        <button onclick="deleteAll()" class="btn btn-sm btn-warning mx-2 my-2">delete all</button>
+
+    </div>
+
+    
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table table-striped" id="table">
+
+    </table>
+
+
+    <script src="script.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>
